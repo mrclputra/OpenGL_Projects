@@ -25,8 +25,8 @@ float generateRandomDirection();
 void frameBufferSizeCallback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
-const unsigned int SCR_WIDTH = 1280;
-const unsigned int SCR_HEIGHT = 720;
+const unsigned int SCR_WIDTH = 720;
+const unsigned int SCR_HEIGHT = 480;
 
 // formatted for readability, real values are divided by 1000
 const float MAX_VELOCITY = 2.0f;
@@ -108,16 +108,15 @@ int main() {
 	unsigned char* data = stbi_load("dvd.png", &width, &height, &channels, 0);
 	if (data != NULL) {
 		// output debug
-		/*cout << "\nLoaded Image with attributes:" << endl
-			<< "\tWidth     : " << width << endl
-			<< "\tHeight    : " << width << endl
-			<< "\tChannels  : " << channels << endl;*/
+		std::cout << "\nLoaded Image with attributes:" << std::endl
+			<< "\tWidth     : " << width << std::endl
+			<< "\tHeight    : " << width << std::endl
+			<< "\tChannels  : " << channels << std::endl;
 
-			// deprecated
-			/*// flip alpha channel
-			for (int i = 0; i < width * height * channels; i += channels) {
-				data[i + 3] = 255 - data[i + 3]; // Flip the alpha value
-			}*/
+			// deprecated, flips alpha channel
+			//for (int i = 0; i < width * height * channels; i += channels) {
+			//	data[i + 3] = 255 - data[i + 3]; // Flip the alpha value
+			//}
 
 		// create texture
 		glGenTextures(1, &texture);
