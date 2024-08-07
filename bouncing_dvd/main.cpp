@@ -105,7 +105,7 @@ int main() {
 	unsigned int texture;
 	int width, height, channels;
 	stbi_set_flip_vertically_on_load(true);
-	unsigned char* data = stbi_load("bouncing_dvd/dvd.png", &width, &height, &channels, 0);
+	unsigned char* data = stbi_load("dvd.png", &width, &height, &channels, 0);
 	if (data != NULL) {
 		// output debug
 		/*cout << "\nLoaded Image with attributes:" << endl
