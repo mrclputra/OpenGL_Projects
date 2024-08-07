@@ -78,6 +78,33 @@ int main() {
 	glGenBuffers(1, &VBO);
 	glGenBuffers(1, &EBO);
 
+	/*
+	VAO vs VBO vs EBO? What's the difference?
+	- https://community.khronos.org/t/opengl-vao-vbo-ebo-explained/75169
+	- https://community.khronos.org/t/confirmation-that-i-actually-understand-vaos-vbos-and-ebos/73711
+
+	Vertex Array Objects (VAO)
+		- Stores the state related to vertex attribute configurations. 
+		- It keeps track of the vertex attribute pointers and the vertex buffer bindings.
+		- When you create and bind a VAO, it allows you to store and manage multiple vertex attribute configurations in one object.
+		- Once bound, you can quickly switch between different VAOs, which helps in reducing the overhead of state changes when rendering.
+
+	Vertex Buffer Objects (VBO)
+		- Stores vertex data (such as positions, normals, colors) directly on the GPU for efficient rendering.
+		- When you create a VBO and bind it, you upload vertex data to the GPU. You then set up vertex attribute pointers to specify how the vertex data should be interpreted.
+		- Reduces the need to send vertex data to the GPU every frame, improving performance.
+
+	Element Buffer Objects (EBO)
+		- Stores indices that specify which vertices to use for drawing primitives (e.g., triangles, lines).
+		- When you create an EBO and bind it, you upload index data to the GPU. This allows you to reuse vertices and reduces redundancy i.e. triangles in a polygon.
+		- Reduces the amount of vertex data needed and minimizes the number of vertices processed by the GPU
+
+	Summary:
+		VAO: Manages the state of vertex attribute pointers and buffers.
+		VBO: Stores vertex data on the GPU.
+		EBO: Stores index data for efficient drawing of primitives.
+	*/
+
 	// vertex array objects (VAO)
 	glBindVertexArray(VAO);
 	// vertex buffer objects (VBO)
