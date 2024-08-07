@@ -8,7 +8,7 @@
 	'shader.h' is an automated implementation to generate shader API handles from vertex and fragment files
 	it returns shader program handle
 
-	DO NOT create a .gitignore file
+	use my custom .gitignore file
 
 */
 
