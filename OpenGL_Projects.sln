@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "advanced", "advanced", "{F9
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "bouncing_dvd", "bouncing_dvd\bouncing_dvd.vcxproj", "{B78D1F0D-3AAC-413D-B11A-52245BA7813A}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "coordinate_systems", "coordinate_systems\coordinate_systems.vcxproj", "{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -45,6 +47,14 @@ Global
 		{B78D1F0D-3AAC-413D-B11A-52245BA7813A}.Release|x64.Build.0 = Release|x64
 		{B78D1F0D-3AAC-413D-B11A-52245BA7813A}.Release|x86.ActiveCfg = Release|Win32
 		{B78D1F0D-3AAC-413D-B11A-52245BA7813A}.Release|x86.Build.0 = Release|Win32
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Debug|x64.ActiveCfg = Debug|x64
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Debug|x64.Build.0 = Debug|x64
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Debug|x86.ActiveCfg = Debug|Win32
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Debug|x86.Build.0 = Debug|Win32
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Release|x64.ActiveCfg = Release|x64
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Release|x64.Build.0 = Release|x64
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Release|x86.ActiveCfg = Release|Win32
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +62,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{82E76F43-1C8E-4B2F-81F1-8C5EDEF42C6A} = {407D2605-BB59-4D2A-A144-DE5DF543A3B3}
 		{B78D1F0D-3AAC-413D-B11A-52245BA7813A} = {F9333DCD-0121-437C-994D-5D7CD07C03AC}
+		{D70825DA-0CC3-40DA-8BC8-3C26E9ACAF20} = {F9333DCD-0121-437C-994D-5D7CD07C03AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {833D281C-E4E0-44F6-9757-D51626B251A9}
